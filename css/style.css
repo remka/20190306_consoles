@@ -34,6 +34,7 @@ html, body {
   transform: translateZ(0);
 }
 
+#menu.gameandwatch .gameandwatch,
 #menu.nes .nes,
 #menu.gameboy .gameboy,
 #menu.supernes .supernes {
@@ -74,6 +75,7 @@ html, body {
   position: absolute;
   transition: all 0.3s ease-in-out;
   transform: translateZ(0);
+  overflow: hidden;
 }
 #container .frame .layer-1 {
   z-index: 1;
@@ -294,6 +296,7 @@ html, body {
   width: 320px;
   height: 4px;
   top: 160px;
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 #container.gameboy .frame .layer-3 {
@@ -319,6 +322,7 @@ html, body {
   height: 200px;
   top: 180px;
   border-radius: 10px 10px 40px 10px;
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 #container.gameboy .frame .layer-9 {
@@ -327,6 +331,8 @@ html, body {
   top: 205px;
   width: 160px;
   height: 150px;
+  box-shadow:
+    inset 0 -4px 0 #908e9c;
 }
 
 #container.gameboy .frame .detail-4 {
@@ -355,6 +361,7 @@ html, body {
   height: 60px;
   border-radius: 40px;
   transform: rotate(-30deg);
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 #container.gameboy .frame .detail-6 {
@@ -383,6 +390,7 @@ html, body {
   width: 100px;
   height: 100px;
   border-radius: 60px;
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 #container.gameboy .frame .detail-1 {
@@ -413,6 +421,7 @@ html, body {
   height: 10px;
   border-radius: 40px;
   transform: rotate(-30deg);
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 #container.gameboy .frame .detail-3 {
@@ -423,6 +432,7 @@ html, body {
   height: 10px;
   border-radius: 40px;
   transform: rotate(-30deg);
+  box-shadow: 0 4px 0 #eaeaea;
 }
 
 /* nes */
@@ -569,5 +579,163 @@ html, body {
   left: 160px;
   top: 518px;
   width: 340px;
+  height: 4px;
+}
+
+/* gameandwatch */
+
+#container.gameandwatch .frame .layer-1 {
+  background: #84282f;
+  left: 150px;
+  top: 225px;
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#container.gameandwatch .frame .layer-2 {
+  background: #b5b9aa;
+  left: 170px;
+  top: 245px;
+  width: 460px;
+  height: 310px;
+  border-radius: 5px;
+}
+
+#container.gameandwatch .frame .layer-3 {
+  background: transparent;
+  border: 10px solid #969b88;
+  left: 260px;
+  top: 265px;
+  width: 260px;
+  height: 220px;
+  border-radius: 7px;
+}
+
+#container.gameandwatch .frame .layer-4 {
+  background: #ca411d;
+  border: 4px solid #84282f;
+  left: 195px;
+  top: 450px;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  box-shadow: inset 0 4px 0 #dc5539;
+}
+
+#container.gameandwatch .frame .layer-5 {
+  background: #ca411d;
+  border: 4px solid #84282f;
+  left: 557px;
+  top: 450px;
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  box-shadow: inset 0 4px 0 #dc5539;
+}
+
+#container.gameandwatch .frame .layer-6 {
+  background: #969b88;
+  left: 190px;
+  top: 275px;
+  width: 50px;
+  height: 43px;
+  border-radius: 5px;
+}
+
+#container.gameandwatch .frame .layer-7 {
+  background: #969b88;
+  left: 560px;
+  top: 285px;
+  width: 50px;
+  height: 16px;
+}
+
+/* Label btn left */
+#container.gameandwatch .frame .layer-8 {
+  background: #969b88;
+  left: 198px;
+  top: 430px;
+  width: 42px;
+  height: 8px;
+}
+
+/* screen */
+#container.gameandwatch .frame .layer-9 {
+  background: #797951;
+  border: 6px solid #84282f;
+  left: 290px;
+  top: 300px;
+  width: 208px;
+  height: 158px;
+  border-radius: 5px;
+  box-shadow:
+    inset 10px 0 0 #5e5e38,
+    inset 0 10px 0 #5e5e38;
+}
+
+/* Label btn right */
+#container.gameandwatch .frame .detail-1 {
+  background: #969b88;
+  left: 560px;
+  top: 430px;
+  width: 42px;
+  height: 8px;
+}
+
+#container.gameandwatch .frame .detail-2 {
+  background: #2f312e;
+  left: 310px;
+  top: 520px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* btns */
+
+#container.gameandwatch .frame .detail-3 {
+  background: #8f8965;
+  border: 4px solid #84282f;
+  left: 397px;
+  top: 515px;
+  width: 25px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+#container.gameandwatch .frame .detail-4 {
+  background: #8f8965;
+  border: 4px solid #84282f;
+  left: 437px;
+  top: 515px;
+  width: 25px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+#container.gameandwatch .frame .detail-5 {
+  background: #8f8965;
+  border: 4px solid #84282f;
+  left: 477px;
+  top: 515px;
+  width: 25px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+#container.gameandwatch .frame .detail-6 {
+  background: #969b88;
+  left: 309px;
+  top: 477px;
+  width: 12px;
+  height: 10px;
+}
+
+#container.gameandwatch .frame .detail-7 {
+  background: #969b88;
+  left: 397px;
+  top: 480px;
+  width: 113px;
   height: 4px;
 }
