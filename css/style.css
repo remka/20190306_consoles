@@ -760,6 +760,16 @@ html, body {
   height: 4px;
 }
 
+#container.gameandwatch .frame .detail-7 span {
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+}
+
 /* nintendo 64 */
 
 #container.nsixtyfour .frame .layer-1 {
@@ -939,6 +949,14 @@ html, body {
   box-shadow: 0 4px 0 #656565;
 }
 
+#container.nsixtyfour .frame .layer-8 {
+  background: transparent;
+  left: 200px;
+  top: 125px;
+  width: 400px;
+  height: 300px;
+}
+
 /* gamecube */
 
 #container.gamecube .frame .layer-1 {
@@ -1019,7 +1037,7 @@ html, body {
   box-shadow: 0 4px 0 #e2e3e4;
 }
 
-#container.gamecube .frame .layer-9 {
+#container.gamecube .frame .detail-3 {
   border: 4px solid #a5a8af;
   left: 275px;
   top: 565px;
@@ -1047,6 +1065,7 @@ html, body {
   height: 260px;
   border-bottom-left-radius: 50% 20px;
   border-bottom-right-radius: 50% 20px;
+  overflow: hidden;
   box-shadow:
     inset 4px 0 0 #423c76,
     inset -4px 0 0 #423c76,
@@ -1065,7 +1084,30 @@ html, body {
   border-radius: 50px;
 }
 
-#container.gamecube .frame .detail-3 {
+#container.gamecube .frame .detail-2::before {
+  content: "";
+  display: block;
+  background: #423c76;
+  width: 50px;
+  height: 50px;
+  left: -25px;
+  top: 220px;
+  position: absolute;
+  border-radius: 50px;
+}
+
+#container.gamecube .frame .detail-2 span {
+  display: block;
+  background: #423c76;
+  width: 50px;
+  height: 50px;
+  left: 275px;
+  top: 220px;
+  position: absolute;
+  border-radius: 50px;
+}
+
+#container.gamecube .frame .layer-9 {
   background: #1e1e1f;
   left: 300px;
   top: 165px;
@@ -1085,6 +1127,65 @@ html, body {
   width: 32px;
   height: 32px;
   border-radius: 32px;
-  box-shadow:
-    inset 0 -4px 0 #a5a8af;
 }
+
+#container.gamecube .frame .detail-5 {
+  background: #6b5ead;
+  border: 5px solid #6b5ead;
+  left: 230px;
+  top: 349px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  box-shadow:
+    inset 4px 0 0 #423c76,
+    inset -4px 0 0 #423c76,
+    inset 0 4px 0 #423c76,
+    inset 0 -4px 0 #423c76;
+}
+
+#container.gamecube .frame .detail-6 {
+  background: #6b5ead;
+  border: 5px solid #6b5ead;
+  left: 529px;
+  top: 349px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  box-shadow:
+    inset 4px 0 0 #423c76,
+    inset -4px 0 0 #423c76,
+    inset 0 4px 0 #423c76,
+    inset 0 -4px 0 #423c76;
+}
+
+#container.gamecube .frame .detail-7 {
+  background: transparent;
+  left: 529px;
+  top: 349px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+}
+/*
+#container.gamecube .frame .detail-7 {
+  background: #1e1e1f;
+  left: 250px;
+  top: 660px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  overflow: visible;
+}
+
+#container.gamecube .frame .detail-7 span {
+  background: #1e1e1f;
+  left: 276px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+}
+*/
